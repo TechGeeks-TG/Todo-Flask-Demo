@@ -26,6 +26,7 @@
 
         span.onclick = function() {
             document.execCommand("copy");
+            alert('Copied to Clipboard!');
         }
 
         span.addEventListener("copy", function(event) {
