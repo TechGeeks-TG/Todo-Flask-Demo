@@ -67,5 +67,12 @@ def delete(sno):
 def about():
     return render_template('about.html')
 
+@app.route("/sitemap.xml")
+def sitemap():
+    sitemap = render_template('sitemap.xml')
+    response = make_response(sitemap)
+    response.headers['Content-Type'] = 'application/xml'
+    return response
+
 if __name__ == "__main__":
     app.run(debug=True)
