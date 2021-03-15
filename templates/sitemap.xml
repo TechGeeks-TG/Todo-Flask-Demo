@@ -8,4 +8,5 @@ This should be used for submission in Google Search Console-->
 <url>
     <loc>https://todo-flask-demo.herokuapp.com/about</loc>
     <priority>1.00</priority>
+</url>
 </urlset>
